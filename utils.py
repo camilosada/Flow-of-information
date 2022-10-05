@@ -62,3 +62,4 @@ def plot_raster(dat_raster,trial_dat_raster_ST,i_trial,idx):
         ax.legend(['stimulus onset','reaction_time','gocue', 'response_time', 'feedback_time'], fontsize=9)
         ax.set(xlabel="Time (s)", ylabel='Neurons')
         fig.tight_layout(pad=0.2, h_pad=1.3, w_pad=1.3)
+ 
