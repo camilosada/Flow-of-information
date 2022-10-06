@@ -69,7 +69,7 @@ def plot_raster(dat_raster,trial_dat_raster_ST,i_trial,idx):
  
 
 def check_neuron_activation(neurons,passive_neurons):
-
+    # TO DO! -> include cells which respond at a level at least two standard deviations above the mean spontaneous activity
     diff_n = ( neurons.mean(axis=2).T -  passive_neurons.mean(axis=2)[:,0]).T
 
     return np.where(diff_n> 0)
